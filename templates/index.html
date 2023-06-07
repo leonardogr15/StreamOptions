@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+
+<body>
+    <div class="button" style="position: fixed; top: 10px; right: 10px;" onclick="llamarFuncionPython()">
+        <div class="container">
+            <div class="tick">
+            </div>
+        </div>
+    </div>
+    <!-- <button id="btn-shutdown" style="position: fixed; top: 10px; right: 10px;">Apagar</button> -->
+    <!-- <button id="btn-contact" style="position: fixed; top: 10px; left: 10px;">Contacto</button> -->
+
+    <a target="_blank" class="card paramount" onclick="abrirVentana('p')">
+        <div class="cor__cobertura"></div>
+        <div class="circulo">
+            <img width="80" height="80" viewBox="0 0 80 80" fill="none" src="{{ url_for('static', filename='img/paramount.png') }}" alt="imagen paramount"
+                style="z-index: 9999; border-radius: 35%; overflow: hidden;">
+        </div>
+        <p>PARAMOUNT</p>
+    </a>
+    <a  target="_blank" class="card netflix" onclick="abrirVentana('n')">
+        <div class="cor__cobertura"></div>
+        <div class="circulo">
+            <img width="80" height="80" viewBox="0 0 80 80" fill="none" src="{{ url_for('static', filename='img/netflix.png') }}"  alt="imagen netflix"
+                style="z-index: 9999; border-radius: 35%; overflow: hidden;">
+        </div>
+        <p>NETFLIX</p>
+    </a>
+    <a onclick="abrirVentana('g')" target="_blank" class="card google">
+        <div class="cor__cobertura"></div>
+        <div class="circulo">
+            <img width="80" height="80" viewBox="0 0 80 80" fill="none" src="{{ url_for('static', filename='img/google.png') }}" alt="imagen google"
+                style="z-index: 9999; border-radius: 35%; overflow: hidden;">
+        </div>
+        <p>GOOGLE</p>
+    </a>
+    <a onclick="abrirVentana('y')" target="_blank" class="card youtube">
+        <div class="cor__cobertura"></div>
+        <div class="circulo">
+            <img width="80" height="80" viewBox="0 0 80 80" fill="none" src="{{ url_for('static', filename='img/youtube.png') }}" alt="imagen youtube"
+                style="z-index: 9999; border-radius: 15%; overflow: hidden;">
+        </div>
+        <p>YOUTUBE</p>
+    </a>
+    <!-- <a onclick="abrirVentana('h')" class="card hbo">
+        <div class="cor__cobertura"></div>
+        <div class="circulo">
+            <img width="80" height="80" viewBox="0 0 80 80" fill="none" src="{{ url_for('static', filename='img/hbo.png') }}"  alt="imagen youtube" style="z-index: 9999; border-radius: 15%; overflow: hidden;">
+        </div>
+        <p>HBO</p>
+    </a> -->
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+
+</html>
