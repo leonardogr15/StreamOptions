@@ -59,6 +59,21 @@
         </div>
         <p>HBO</p>
     </a> -->
+    <a onclick="abrirVentana('d')" class="card disney">
+        <div class="cor__cobertura"></div>
+        <div class="circulo">
+            <img width="80" height="80" viewBox="0 0 80 80" fill="none" src="{{ url_for('static', filename='img/disney.png') }}"  alt="imagen youtube" style="z-index: 9999; border-radius: 15%; overflow: hidden;">
+        </div>
+        <p>Disney</p>
+    </a>
+
+    <a onclick="abrirVentana('s')" class="card star">
+        <div class="cor__cobertura"></div>
+        <div class="circulo">
+            <img width="80" height="80" viewBox="0 0 80 80" fill="none" src="{{ url_for('static', filename='img/star.png') }}"  alt="imagen youtube" style="z-index: 9999; border-radius: 15%; overflow: hidden;">
+        </div>
+        <p>Star Plus</p>
+    </a>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>

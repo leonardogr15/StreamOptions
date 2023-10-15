@@ -55,6 +55,12 @@ abrirVentana = (get_str)=>{
     case 'h':
       url = "https://www.hbomax.com";
       break;
+    case 'd':
+      url = "https://www.disneyplus.com/home";
+      break;
+    case 's':
+      url = "https://www.starplus.com/home";
+      break;
     default:
       console.log("Opción inválida");
       return;
